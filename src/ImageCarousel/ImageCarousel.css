@@ -1,0 +1,84 @@
+.carousel-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow-x: auto;
+    flex: 200;
+    display: flex;
+    overflow: hidden;
+    margin-left: 0px;
+    transition: margin-left 0.2s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.carousel-slider {
+    padding: 2px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slider-btns {
+    position: absolute;
+    top: 48%;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    z-index: 9999999;
+}
+
+.carousel-slider-btns-actions {
+    height: 20px;
+    cursor: pointer;
+}
+
+.img-container {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-img {
+    max-height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+/* ///////////////// */
+.ImageCarouselApp-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-dot {
+    height: 9px;
+    width: 9px;
+    margin: 2px;
+    border-radius: 20px;
+    background-color: gray;
+
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.active {
+    background-color: gray;
+}
+
+.carousel-indicator-component {
+    display: flex;
+    justify-content: center;
+}
